@@ -1,16 +1,16 @@
 """
-Installation Instructions
+Installation Instructions - Mac OS 
 
 	1) Install python
 	2) Install Splinter 
 		Mac--> pip install splinter 
-		Source code --> Make sure git is install 
+		Source code --> Make sure git is installed 
 			git clone git://github.com/cobrateam/splinter.git
 			$ cd splinter
 			$ [sudo] python setup.py install
-	3) Install Chrome Driver
+	3) Install Selenium 
 		pip install selenium 
-	4) Install Homebrew
+	4) Install Homebrew and Chromedriver 
 		Mac) 
 			http://brew.sh/
 				/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -22,21 +22,6 @@ Installation Instructions
 				Environment variables
 				How to manage environment variables in Windows XP
 
-
-Install on PC 
-
-	Make sure Sublime Text, Python, Splinter (with Git) are installed; 
-	No need to install chromedriver --> make sure firefox is installed 
-
-	Use Windows Task Scheduler to setup python file on login 
-			Triggers--> At log on 
-			Actions
-				Start a Program 
-					Program/Script--> Find where python 3.5 is installed on the computer
-					Add Arguments--> Clicker.py 
-					Start in --> Copy working directory into the file 
-
-					Good to go! 
 """
 
 
@@ -75,8 +60,8 @@ def browser_selector():
 
 #Initializes Craigslist 
 browser = browser_selector()
-username = "allianceAutoGroupva@gmail.com"
-password = "Alliance2015"
+username = "ENTER USERNAME HERE"
+password = "ENTER PASSWORD HERE"
 site = str("https://accounts.craigslist.org/login/home")
 browser.visit(site)
 
@@ -137,5 +122,3 @@ print("Success! You reposted " + str(num) + " Ads")
 ####''' Copy and paste for multiple account links'''####
 ########################################################
 
-#There is no additional necessary documentation 
-#This is a test of emacs effectivenes 
